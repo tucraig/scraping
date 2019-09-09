@@ -13,6 +13,7 @@ You'll need 4 things:
  - Pip (Python Package/Module Manager)
  - Requests (Python Module)
  - BeautifulSoup4 (Python Module)
+ - lxml (Python Library for Parsing Websites)
  
 You can install everything super quickly:
 ```
