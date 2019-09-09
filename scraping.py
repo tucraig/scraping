@@ -26,7 +26,7 @@ def ESPNExample(team_id='2166',year='2016', debug=False):
             print soup
         
         num_games_played = len(soup.find_all('span', {'class':'ml4'}))
-        print num_games_played
+        #print num_games_played
         for game_number in range(num_games_played):
             try:
                 output = []
@@ -79,8 +79,9 @@ def ESPNExample(team_id='2166',year='2016', debug=False):
 
                 stats = stats_table.find('tbody')
 
-                print stats
-
+                #print stats
+		print ("header, %s, %s" % (str(stats_soup.find_all('td',{'class','team-name'})[1].text),
+					  str(stats_soup.find_all('td',{'class','team-name'})[2].text)))
                 for row in stats.find_all('tr'):
                     print list(str(i.text.strip()) for i in row.find_all('td'))
 #PlayByPlay
