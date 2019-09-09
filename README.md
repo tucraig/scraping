@@ -8,7 +8,7 @@ I've made it so all you have to do is download this repository as a zip, extract
 # Installing Stuff
 There are 2 components for web scraping: a process for getting the data from the web and a process for parsing it. Python is probably the easiest to understand so I'm going to use that today.The same concepts apply to other languages, though. And the two libraries I'll make use of are Requests and Beautiful Soup.
 
-You'll need 4 things:
+You'll need 5 things:
  - Python
  - Pip (Python Package/Module Manager)
  - Requests (Python Module)
