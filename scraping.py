@@ -80,7 +80,7 @@ def ESPNExample(team_id='2166',year='2016', debug=False):
                 stats = stats_table.find('tbody')
 
                 #print stats
-		print str(stats_soup.find_all('td',{'class','team-name'})[1].text
+		print str(stats_soup.find_all('td',{'class','team-name'})[1].text)
 		#print ("header, %s, %s" % (str(stats_soup.find_all('td',{'class','team-name'})[1].text),
 					  str(stats_soup.find_all('td',{'class','team-name'})[2].text)))
                 for row in stats.find_all('tr'):
