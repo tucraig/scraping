@@ -3,6 +3,8 @@ Boilerplate Code / Tutorial for Web Scraping
 
 Scraping is totally a trial and error process. It's best dealt in a case-by-case basis. I've included a few examples, though, that highlight different ways of scraping data from websites.
 
+None of them work *perfectly*, but take them as a starting point and as reference in how to extract different types of information.
+
 I've made it so all you have to do is download this repository as a zip, extract, and start coding. But that means you have to work from this directory, which isn't the best practice. You can follow along below if you want to install it on your machine.
 
 # Installing Stuff
@@ -40,7 +42,7 @@ The main file is going to be 'scraping.py'
 # Actually Scraping
 The are 3 elements of scraping: the url, the sauce, and the soup. The url is where you want to point Requests, it's where the data is stored on the web. The sauce is what's returned from requests -- it's the data, it just doesn't make sense yet. And then the soup is what you're after -- you're able to start to understand the data at this point.
 
-You can edit the url to the page that has your data, and know that it's possible to nest request sessions within one another. You might make a script to go to one page and then open another and get more data from there. I've used this in paginated pages, or to access data that stems from a calendar.
+You can edit the url to the page that has your data, and know that it's possible to nest multiple requests (to different urls) within a single session. You might make a script to go to one page and then open another and get more data from there. I've used this in paginated pages, or to access data that stems from a calendar.
 
 ## Step 1: the url
 Go to the website with your source (ESPN) and navigate until you have the data on the screen. Copy that url and paste it into the code (in your url variable).
